@@ -28,33 +28,54 @@ export default function Home() {
             alt="XnodeOS Hero"
             width={400}
             height={300}
-            className="rounded-lg shadow-xl"
+            className="rounded-lg shadow-xl transition-transform duration-500 ease-in-out transform hover:scale-105"
           />
         </div>
       </section>
 
       {/* Features Section */}
       <section className="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <Card className="transition-all duration-300 ease-in-out hover:scale-105">
-          <CardContent>
+        <Card className="transition-transform duration-500 ease-in-out hover:scale-105">
+          <CardContent className="flex flex-col items-center">
+            <Image
+              src="https://images.unsplash.com/photo-1581093588401-5c1b1e5b5b5b?auto=format&fit=crop&w=400&q=80"
+              alt="No-code Deployment"
+              width={120}
+              height={120}
+              className="rounded-full mb-4"
+            />
             <h3 className="text-xl font-semibold mb-2">No-code Deployment</h3>
-            <p className="text-muted-foreground">
+            <p className="text-muted-foreground text-center">
               Deploy applications without writing code, using our intuitive UI.
             </p>
           </CardContent>
         </Card>
-        <Card className="transition-all duration-300 ease-in-out hover:scale-105">
-          <CardContent>
+        <Card className="transition-transform duration-500 ease-in-out hover:scale-105">
+          <CardContent className="flex flex-col items-center">
+            <Image
+              src="https://images.unsplash.com/photo-1581093588401-5c1b1e5b5b5b?auto=format&fit=crop&w=400&q=80"
+              alt="Maximum Security"
+              width={120}
+              height={120}
+              className="rounded-full mb-4"
+            />
             <h3 className="text-xl font-semibold mb-2">Maximum Security</h3>
-            <p className="text-muted-foreground">
+            <p className="text-muted-foreground text-center">
               Built-in security features protect your system by default.
             </p>
           </CardContent>
         </Card>
-        <Card className="transition-all duration-300 ease-in-out hover:scale-105">
-          <CardContent>
+        <Card className="transition-transform duration-500 ease-in-out hover:scale-105">
+          <CardContent className="flex flex-col items-center">
+            <Image
+              src="https://images.unsplash.com/photo-1581093588401-5c1b1e5b5b5b?auto=format&fit=crop&w=400&q=80"
+              alt="NixOS Powered"
+              width={120}
+              height={120}
+              className="rounded-full mb-4"
+            />
             <h3 className="text-xl font-semibold mb-2">NixOS Powered</h3>
-            <p className="text-muted-foreground">
+            <p className="text-muted-foreground text-center">
               Leverage the declarative power of NixOS for reliable deployments.
             </p>
           </CardContent>
@@ -82,7 +103,7 @@ export default function Home() {
             alt="Security"
             width={400}
             height={300}
-            className="rounded-lg shadow-xl"
+            className="rounded-lg shadow-xl transition-transform duration-500 ease-in-out transform hover:scale-105"
           />
         </div>
       </section>
@@ -103,6 +124,15 @@ export default function Home() {
             Download XnodeOS
           </a>
         </Button>
+        <div className="mt-6">
+          <Image
+            src="https://images.unsplash.com/photo-1581093588401-5c1b1e5b5b5b?auto=format&fit=crop&w=800&q=80"
+            alt="Download"
+            width={400}
+            height={300}
+            className="rounded-lg shadow-xl transition-transform duration-500 ease-in-out transform hover:scale-105"
+          />
+        </div>
       </section>
     </main>
   );
